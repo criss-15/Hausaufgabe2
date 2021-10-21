@@ -6,8 +6,14 @@ import java.util.ArrayList;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+/**
+ * The type Benutzer test.
+ */
 class BenutzerTest {
 
+    /**
+     * Gets vor name.
+     */
     @Test
     void getVorName() {
         List<Sport> sportList = new ArrayList<>();
@@ -15,6 +21,9 @@ class BenutzerTest {
         assertEquals(benutzer.getVorName(), "Gavriliu");
     }
 
+    /**
+     * Gets nach name.
+     */
     @Test
     void getNachName() {
         List<Sport> sportList = new ArrayList<>();
@@ -22,6 +31,9 @@ class BenutzerTest {
         assertEquals(benutzer2.getNachName(), "Bogdan");
     }
 
+    /**
+     * Gets sport.
+     */
     @Test
     void getSport() {
         Sport fussbal1 = new Fussball();
@@ -45,6 +57,9 @@ class BenutzerTest {
         assertEquals(benutzer.getSport(), sportList);
     }
 
+    /**
+     * Kalkuliere zeit.
+     */
     @Test
     void kalkuliereZeit() {
         Sport basket1 = new Basketball();
@@ -70,6 +85,9 @@ class BenutzerTest {
         assertEquals(benutzer.kalkuliereZeit(), 385);
     }
 
+    /**
+     * Test kalkuliere zeit.
+     */
     @Test
     void testKalkuliereZeit() {
         Sport basket1 = new Basketball();
@@ -100,6 +118,9 @@ class BenutzerTest {
     }
 
 
+    /**
+     * Kalkuliere durschnittszeit.
+     */
     @Test
     void kalkuliereDurschnittszeit() {
         Sport basket1 = new Basketball();
