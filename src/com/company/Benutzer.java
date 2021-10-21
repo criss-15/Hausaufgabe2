@@ -37,6 +37,11 @@ public class Benutzer {
         this.sportList = sportList;
     }
 
+
+
+    /* die Methode berechent das gebrauchte Zeit fur alle Sportarten
+    Output: das gebrauchte Zeit
+     */
     public double kalkuliereZeit(){
         int sum=0;
         for (Sport spt:
@@ -48,6 +53,10 @@ public class Benutzer {
 
 
 
+    /* die Methode berechent die Zeit gebraucht fur eine Sportart
+    Input: eine Sportart als Parameter
+    Output: die gebrauchte Zeit fur diese Sport
+     */
     public double kalkuliereZeit(Sport sport){
         double sum=0;
         for(int i=0; i< this.sportList.size(); i++)
@@ -59,6 +68,9 @@ public class Benutzer {
     }
 
 
+    /* die Methode berechnet die Durchnittszeit fur alle Sportarten
+    Output:das gebrauchte Durchnittszeit furs Sport
+     */
     public double kalkuliereDurschnittszeit(){
         double durchnitts_zeit;
         double sum;
