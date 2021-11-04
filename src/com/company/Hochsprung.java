@@ -6,9 +6,9 @@ package com.company;
  */
 public class Hochsprung extends Leichtathletik{
     /**
-     * Kalkuliere zeit double.
+     * Kalkuliert die Zeit verbraucht fur Hochsprung
      *
-     * @return the double
+     * @return die verbrauchte Zeit
      */
     @Override
     public double kalkuliereZeit(){

@@ -5,9 +5,9 @@ package com.company;
  */
 public class Hindernislauf extends Leichtathletik{
     /**
-     * Kalkuliere zeit double.
+     * Kalkuliert die Zeit verbraucht fur Hindernislauf
      *
-     * @return the double
+     * @return die Zeit verbraucht
      */
     @Override
     public double kalkuliereZeit(){

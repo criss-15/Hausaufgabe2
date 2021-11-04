@@ -5,9 +5,9 @@ package com.company;
  */
 public class Basketball extends Mannschaftssport{
     /**
-     * Kalkuliere zeit double.
+     * Kalkuliert die Zeit fur Basketball
      *
-     * @return the double
+     * @return die verbrauchte Zeit 
      */
     @Override
     public double kalkuliereZeit(){

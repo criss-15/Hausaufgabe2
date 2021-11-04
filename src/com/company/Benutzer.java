@@ -18,58 +18,32 @@ public class Benutzer {
     }
 
 
-    /**
-     * Gets vor name.
-     *
-     * @return the vor name
-     */
+
     public String getVorName() {
         return vorName;
     }
 
 
-    /**
-     * Gets nach name.
-     *
-     * @return the nach name
-     */
     public String getNachName() {
         return nachName;
     }
 
-    /**
-     * Gets sport.
-     *
-     * @return the sport
-     */
+
     public List<Sport> getSport() {
         return sportList;
     }
 
-    /**
-     * Sets vor name.
-     *
-     * @param vorName the vor name
-     */
+
     public void setVorName(String vorName) {
         this.vorName = vorName;
     }
 
-    /**
-     * Sets nach name.
-     *
-     * @param nachName the nach name
-     */
+
     public void setNachName(String nachName) {
         this.nachName = nachName;
     }
 
 
-    /**
-     * Sets sport.
-     *
-     * @param sport the sport
-     */
     public void setSport(List<Sport> sport) {
         this.sportList = sportList;
     }
@@ -78,9 +52,9 @@ public class Benutzer {
 
 
     /**
-     * Kalkuliere zeit double.
+     * Die Methode kalkuliert die Zeit verbraucht fur alle Sportarten
      *
-     * @return the double
+     * @return das gesamte Zeit verbraucht
      */
     public double kalkuliereZeit(){
         int sum=0;
@@ -91,14 +65,11 @@ public class Benutzer {
         return sum;
     }
 
-
-
-
     /**
-     * Kalkuliere zeit double.
+     * Die Methode kalkuliert die Zeit verbraucht fur eine bestimmte Sportart
      *
-     * @param sport the sport
-     * @return the double
+     * @param eine Sportart
+     * @return das verbrauchte Zeit fur diese Sportart
      */
     public double kalkuliereZeit(Sport sport){
         double sum=0;
@@ -112,16 +83,14 @@ public class Benutzer {
 
 
     /**
-     * Kalkuliere durschnittszeit double.
+     * Die Methode kalkuliert der Durchschnittszeit fur alle Sportarten
      *
-     * @return the double
+     * @return wie viel Zeit man in Durchschnitt fur Sport verbraucht
      */
     public double kalkuliereDurschnittszeit(){
-        double durchnitts_zeit;
         double sum;
         sum = kalkuliereZeit();
-        durchnitts_zeit = sum/sportList.size(); //teilen durch Anzahl der Sporte in der Liste
-        return durchnitts_zeit;
+        return sum/sportList.size(); //teilen durch Anzahl der Sporte in der Liste
 
 
     }
